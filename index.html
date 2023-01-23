@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
     <title>Super Mario Bros - O Filme</title>
 </head>
 <body>
@@ -17,13 +20,13 @@
         </video>
     </div>
     <header class="cabecalho">
-        <a href="">
-            <img src="./src/imagens/logo-chapeu-mario.png" alt="logo chapéu Mario">
+        <a>
+            <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="logo chapéu Mario">
         </a>
         <nav>
             <ul class="menu">
-                <li>Home</li>
-                <li>Detalhes</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
             </ul>
         </nav>
     </header>
@@ -34,6 +37,12 @@
             <button class="botao-trailer">Veja o trailer</button>
         </div>
         <img class="mario" src="./src/imagens/super-mario-chars.png" alt="personagens do mario">
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
     <footer>
 
